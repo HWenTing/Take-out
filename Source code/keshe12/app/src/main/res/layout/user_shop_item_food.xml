@@ -1,0 +1,73 @@
+
+<!--客户点击主页进入商家介绍之后所显示的菜品小模块-->
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/shop_itemFood_image"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/user_click_shop_food_choose"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="添加"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/user_click_shop_food_name"
+
+                android:textSize="20sp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:text="sdsds"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/user_click_shop_food_description"
+                android:textSize="20sp"
+                android:text="ddddddddd"
+                android:layout_below="@+id/user_click_shop_food_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="17dp"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/user_click_shop_food_price"
+                android:textSize="20sp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginStart="184dp"
+                android:text="13.6"
+                android:layout_alignLeft="@+id/user_click_shop_food_name"
+                android:layout_alignStart="@+id/user_click_shop_food_name"
+                android:layout_alignParentTop="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

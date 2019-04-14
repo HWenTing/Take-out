@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/deliver_Bar1"
+        android:icon="@drawable/address_book"
+        android:title="Bar1"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/deliver_Bar2"
+        android:icon="@drawable/calendar"
+        android:title="Bar2"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/deliver_Bar3"
+        android:icon="@drawable/camera"
+        android:title="Bar3"
+        app:showAsAction="never"/>
+
+
+
+</menu>

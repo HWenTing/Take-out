@@ -1,0 +1,25 @@
+
+<!--客户主页面右上方菜单选项-->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/address"
+        android:icon="@drawable/address_book"
+        android:title="address"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/calendar"
+        android:title="calendar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/camera"
+        android:title="camera"
+        app:showAsAction="never"/>
+
+
+
+</menu>

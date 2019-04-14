@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.am-form input[type=input]{
+	display: bolck;
+	width: 80%;
+	padding: .5em;
+	font-size: 1.6rem;
+	line-height: 2.5;
+	color: #555;
+	vertical-align: middle;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow
+		.15s ease-in-out;
+	transition: border-color .15s ease-in-out, -webkit-box-shadow .15s
+		ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out,
+		-webkit-box-shadow .15s ease-in-out
+}
+
+.am-form input[type=submit]{
+	width: 20%;
+	line-height: 3.0;
+}
+

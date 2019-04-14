@@ -1,0 +1,42 @@
+
+<!--客户左边框界面选项-->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/user_info"
+            android:icon="@mipmap/ic_launcher"
+            android:title="information"/>
+
+        <item
+            android:id="@+id/user_location"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Location"/>
+        <item
+            android:id="@+id/user_balance"
+            android:icon="@mipmap/ic_launcher"
+            android:title="balance"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/user_history"
+            android:title="history"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/user_like"
+            android:title="like"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/user_comment_to_shop"
+            android:title="comment to shop"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/user_comment_to_deliver"
+            android:title="comment to deliver"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/user_order_unfinish"
+            android:title="unfinish"/>
+    </group>
+
+</menu>

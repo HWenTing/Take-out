@@ -1,0 +1,10 @@
+<litepal>
+    <dbname value="Keshe12"/>
+    <version value="6"/>
+    <list>
+        <mapping class="com.example.hp.materialtest.db.user"/>
+        <mapping class="com.example.hp.materialtest.db.shop"/>
+        <mapping class="com.example.hp.materialtest.db.food"/>
+        <mapping class="com.example.hp.materialtest.db.deliver"/>
+    </list>
+</litepal>

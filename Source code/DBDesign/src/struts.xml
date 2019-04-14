@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">  
+      
+<struts>  
+    <constant name="struts.action.extension" value="action" />  
+      
+    <package name="user" extends="struts-default">
+    
+    	<action name="user_register" 
+         	class="db.action.UserAction.Register" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="get_user_information" 
+         	class="db.action.UserAction.GetUserInformation" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_user_information" 
+         	class="db.action.UserAction.SetUserInformation" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="get_user_location" 
+         	class="db.action.UserAction.GetUserLocation" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_user_location" 
+         	class="db.action.UserAction.SetUserLocation" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="user_in_money" 
+         	class="db.action.UserAction.UserInMoney" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="user_out_money" 
+         	class="db.action.UserAction.UserOutMoney" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="get_comments_from_user_to_shop" 
+         	class="db.action.UserAction.GetCommentToShop" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+    	
+    	 <action name="get_comments_from_user_to_deliver" 
+         	class="db.action.UserAction.GetCommentToDeliver" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_comment_from_user_to_shop" 
+         	class="db.action.UserAction.SetCommentToShop" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_comment_from_user_to_deliver" 
+         	class="db.action.UserAction.SetCommentToDeliver" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+
+    	<action name="add_food_to_order" 
+         	class="db.action.UserAction.AddFoodToOrder" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	
+     	<action name="delete_food_to_order" 
+         	class="db.action.UserAction.DeleteFoodToOrder" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="generate_order" 
+         	class="db.action.UserAction.GenerateOrder" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="getfinishedOrder_user" 
+         	class="db.action.UserAction.GetFinishedOrder_user" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="getAllShop"
+         	class="db.action.UserAction.GetAllShop" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	     	
+     	<action name="getShopByShopTag"
+         	class="db.action.UserAction.GetShopByShopTag" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	    	     	
+     	<action name="getAllOrder"
+         	class="db.action.UserAction.GetAllOrder" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="getUserLike"
+         	class="db.action.UserAction.GetUserLikeShop" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="addUserLikeShop"
+         	class="db.action.UserAction.AddUserLikeShop" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	     	
+     	<action name="getunfinishOrder_user"
+         	class="db.action.UserAction.GetunfinishOrder_user" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	
+     	
+    </package>
+    <package name="shop" extends="struts-default"> 
+   		<action name="shop_register" 
+         	class="db.action.ShopAction.Register" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="get_shop_information" 
+         	class="db.action.ShopAction.GetShopInformation" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_shop_information" 
+         	class="db.action.ShopAction.SetShopInformation" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="get_shop_location" 
+         	class="db.action.ShopAction.GetShopLocation" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_shop_location" 
+         	class="db.action.ShopAction.SetShopLocation" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="shop_in_money" 
+         	class="db.action.ShopAction.ShopInMoney" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="shop_out_money" 
+         	class="db.action.ShopAction.ShopOutMoney" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="shop_comments_from_user" 
+         	class="db.action.ShopAction.GetCommentsFromUser" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+
+     	<action name="certainOrder" 
+         	class="db.action.ShopAction.CertainOrder" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="getfinishedOrder_shop" 
+         	class="db.action.ShopAction.GetFinishedOrderShop" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	     	
+     	<action name="getNeedCertainOrder" 
+         	class="db.action.ShopAction.GetNeedCertainOrder" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="addFood" 
+         	class="db.action.ShopAction.AddFood" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+	     
+	     <action name="deleteFood" 
+         	class="db.action.ShopAction.DeleteFood" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     		     
+	     <action name="getFoodByShopName" 
+         	class="db.action.ShopAction.GetFoodByShopName" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	     		     
+	     <action name="getWaitDeliverOrder" 
+         	class="db.action.ShopAction.GetWaitDeliverOrder" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	     		     
+	     <action name="getWaitFinishOrder" 
+         	class="db.action.ShopAction.GetWaitFinishOrder" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="getFoodByOrder" 
+         	class="db.action.ShopAction.GetFoodByOrder" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+       	</action>
+         	     	
+     	<action name="getOrderByOrderID" 
+         	class="db.action.ShopAction.GetOrderByOrderID" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+       </action>
+               	     	
+     	<action name="changeFood" 
+         	class="db.action.ShopAction.ChangeFood" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+       </action>
+         	
+    </package>
+    
+    
+    
+    
+    
+    <package name="deliver" extends="struts-default"> 
+    	<action name="deliver_register" 
+         	class="db.action.DeliverAction.Register" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="get_deliver_information" 
+         	class="db.action.DeliverAction.GetDeliverInformation" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="set_deliver_information" 
+         	class="db.action.DeliverAction.SetDeliverInformation" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+    	<action name="deliver_in_money" 
+         	class="db.action.DeliverAction.DeliverInMoney" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+    	<action name="deliver_out_money" 
+         	class="db.action.DeliverAction.DeliverOutMoney" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="deliver_comments_from_user" 
+         	class="db.action.DeliverAction.GetCommentsFromUser" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="receiveOrder" 
+         	class="db.action.DeliverAction.ReceiveOrder" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="finishOrder" 
+         	class="db.action.DeliverAction.FinishOrder" 
+         	method="execute">
+         	<result name="Success">/success</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	<action name="getAvailableOrder" 
+         	class="db.action.DeliverAction.GetAvailableOrder" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">reason.jsp</result>
+     	</action>
+     	
+     	<action name="getfinishedOrder_deliver" 
+         	class="db.action.DeliverAction.GetFinishedOrderDeliver" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	     	
+     	<action name="getIngOrderDeliver" 
+         	class="db.action.DeliverAction.GetIngOrderDeliver" 
+         	method="execute">
+         	<result name="Success">/answer.jsp</result>
+         	<result name="Error">/reason.jsp</result>
+     	</action>
+     	
+     	
+    </package>
+</struts>

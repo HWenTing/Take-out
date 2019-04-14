@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!--客户完善location界面-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/bg_user"
+tools:context="com.example.hp.materialtest.user.user_location_Activity">
+
+<!-- Login progress -->
+<ProgressBar
+    android:id="@+id/information_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/user_location_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--定义一个Spinner组件，指定显示该Spinner组件的数组-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="位置信息"
+                android:gravity="center"
+                android:textSize="30sp"
+                />
+
+            <View android:layout_width="match_parent" android:layout_height="2dp"
+                android:background="@color/orange_main"
+                />
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="省："
+                android:gravity="left"
+                android:textSize="20sp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="市："
+                android:gravity="left"
+                android:textSize="20sp"
+                />
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="县："
+                android:gravity="left"
+                android:textSize="20sp"
+                />
+            <Spinner
+                android:id="@+id/spinner_county"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+
+                android:background="@color/colorPrimary"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/location_detailed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+
+
+                    android:layout_toRightOf="@+id/img_location_detailed"
+                    android:background="@null"
+                    android:hint="详细地址"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/img_location_detailed" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/img_location_detailed"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/img_location_detailed"
+
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/btn_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/location_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="100dp"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:text="confirm"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/shop_info"
+            android:icon="@mipmap/ic_launcher"
+            android:title="information"/>
+
+        <item
+            android:id="@+id/shop_location"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Location"/>
+        <item
+            android:id="@+id/shop_balance"
+            android:icon="@mipmap/ic_launcher"
+            android:title="balance"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/shop_history"
+            android:title="history"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/shop_comment"
+            android:title="comment"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/shop_food_manage"
+            android:title="food_manage"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/shop_order_manage"
+            android:title="order_manage"/>
+    </group>
+
+</menu>

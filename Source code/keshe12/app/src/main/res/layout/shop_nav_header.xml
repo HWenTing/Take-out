@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--商家侧边栏显示界面-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/shop_icon_back_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shop_icon_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shop_mail"
+
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:textSize="20sp"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/shop_username"-->
+        <!--android:layout_above="@id/shop_mail"-->
+        <!--android:text="Ting Hao"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textSize="14sp"/>-->
+
+
+</RelativeLayout>

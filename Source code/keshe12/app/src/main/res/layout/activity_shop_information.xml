@@ -1,0 +1,266 @@
+
+<!--客户完善information界面-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_shop"
+    tools:context="com.example.hp.materialtest.user.user_information_Activity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/information_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/information_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/information_in_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="信息完善"
+                android:gravity="center"
+                android:textSize="30sp"
+                />
+            <View android:layout_width="match_parent" android:layout_height="2dp"
+                android:background="@color/orange_main"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/information_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+
+                    android:layout_toRightOf="@+id/img_information_nickname"
+                    android:background="@null"
+                    android:hint="nickname"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/img_information_nickname" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/img_information_nickname"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/img_information_nickname"
+
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/btn_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/information_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+
+                    android:layout_toRightOf="@+id/img_information_email"
+                    android:background="@null"
+                    android:hint="email"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/img_information_email" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/img_information_email"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/img_information_email"
+
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/btn_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/information_production_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+
+                    android:layout_toRightOf="@+id/img_information_production_license"
+                    android:background="@null"
+                    android:hint="production_license"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@id/img_information_production_license" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/img_information_production_license"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/img_information_production_license"
+
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/btn_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/information_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+
+
+                    android:layout_toRightOf="@+id/img_information_mobile"
+                    android:background="@null"
+                    android:hint="mobile"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/img_information_mobile" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/img_information_mobile"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/img_information_mobile"
+
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/btn_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/information_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+
+
+                    android:layout_toRightOf="@+id/img_information_tag"
+                    android:background="@null"
+                    android:hint="tag"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/img_information_tag"
+                    android:background="@color/colorPrimary"/>
+
+                <ImageView
+                    android:id="@+id/img_information_tag"
+
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/btn_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/information_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="100dp"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:text="confirm"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

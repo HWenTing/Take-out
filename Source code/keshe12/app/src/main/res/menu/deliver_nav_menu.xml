@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/deliver_info"
+            android:icon="@mipmap/ic_launcher"
+            android:title="information"/>
+
+        <item
+            android:id="@+id/deliver_balance"
+            android:icon="@mipmap/ic_launcher"
+            android:title="balance"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/deliver_history"
+            android:title="history"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/deliver_available"
+            android:title="Available_order"/>
+        <item
+            android:icon="@mipmap/ic_launcher"
+            android:id="@+id/deliver_comment"
+            android:title="comment"/>
+    </group>
+
+</menu>
